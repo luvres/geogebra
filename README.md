@@ -1,4 +1,4 @@
-## Geogebra 6
+## Geogebra 5
 -----
 ### Run
 ```
@@ -12,4 +12,8 @@ izone/geogebra geogebra-math-calculators
 ### Build
 ```
 docker build -t izone/geogebra .
+```
+##### Geogebra 6
+```
+docker build -t izone/geogebra:6 ./geogebra6/
 ```

@@ -7,9 +7,9 @@ RUN \
 	&& apt-get install -y \
 		curl \
 		gdebi-core \
-		libxtst6
+		libasound2 \
   \
-	&& curl http://www.geogebra.net/linux/pool/main/g/geogebra5/geogebra5_5.0.387.0-563890_amd64.deb -o geogebra.deb \
+	&& curl http://www.geogebra.net/linux/pool/main/g/geogebra-math-calculators/geogebra-math-calculators_6.0.385.0-201709091810_amd64.deb -o geogebra.deb \
 	&& gdebi -n geogebra.deb \
 	&& rm geogebra.deb
 
