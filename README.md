@@ -22,7 +22,7 @@ docker run -ti --rm --name Geogebra \
 -e DISPLAY=unix$DISPLAY \
 -v /tmp/.X11-unix \
 -v $HOME/.Xauthority:/root/.Xauthority \
-izone/geogebra geogebra-math-calculators
+izone/geogebra:6 geogebra-math-calculators
 ```
 ##### Build
 ```
