@@ -11,5 +11,12 @@ RUN \
   \
 	&& curl http://www.geogebra.net/linux/pool/main/g/geogebra5/geogebra5_5.0.387.0-563890_amd64.deb -o geogebra.deb \
 	&& gdebi -n geogebra.deb \
-	&& rm geogebra.deb
+  \
+  # Clean
+	&& rm geogebra.deb \
+	&& apt-get remove -y \
+		curl \
+		gdebi-core \
+	&& apt-get autoremove -y
+
 
