@@ -14,6 +14,7 @@ RUN \
 		curl \
 		gdebi-core \
 		libasound2 \
+		libx11-xcb1 \
   \
 	&& curl http://archive.raspberrypi.org/debian/pool/main/g/geogebra-math-calculators/geogebra-math-calculators_6.0.385.0-201709091810_armhf.deb -o geogebra.deb \
 	&& gdebi -n geogebra.deb \

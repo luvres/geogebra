@@ -15,9 +15,6 @@ docker build -t izone/geogebra .
 ```
 -----
 #### Geogebra 6
-```
-docker build -t izone/geogebra:6 ./geogebra6/
-```
 ##### Run
 ```
 docker run -ti --rm --name Geogebra \
@@ -26,6 +23,10 @@ docker run -ti --rm --name Geogebra \
 -v /tmp/.X11-unix \
 -v $HOME/.Xauthority:/root/.Xauthority \
 izone/geogebra geogebra-math-calculators
+```
+##### Build
+```
+docker build -t izone/geogebra:6 ./geogebra6/
 ```
 
 -----
